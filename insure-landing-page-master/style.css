@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.bleu{
+    background-color: hsl(256, 26%, 20%);
+}
+.hero{
+    position: relative;
+}
+
+hr{
+    width: 150px;
+    height: 3px;
+    background-color: hsl(0, 0%, 98%);
+    margin-left: 20%;
+    margin-top: 50px;
+}
+h2{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-size: 3em;
+    line-height: 60px;
+    width: 80%;
+    margin: auto;
+}
+
+.titreHero{
+    margin: auto;
+    width: 60%;
+}
+
+.pHero{
+    margin: auto;
+    width: 60%;
+    margin-top: 30px;
+}
+button{
+    width: 180px;
+    height: 45px;
+    margin-left: 20%;
+    margin-bottom: 10%;
+    margin-top: 30px;
+    background-color: rgba(240, 248, 255, 0);
+}
+.imgHero{
+    width: 450px;
+    height: 500px;
+    position: absolute;
+    top: 18%;
+    right: 15%;
+}
+.bgLeft{
+    width: 450px;
+    height: 450px;
+    background-image: url(/images/bg-pattern-intro-left-desktop.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 55%; left: 10px;
+}
+.bgRight{
+    width: 450px;
+    height: 450px;
+    background-image: url(/images/bg-pattern-intro-right-desktop.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+}
+
+.hrSection2{
+    background-color: rgb(92, 92, 92);
+    height: 3px;
+    margin-top: 200px;
+}
+.sectionFooter{
+    background-color: hsl(256, 26%, 20%);
+    height: 50vh;
+}

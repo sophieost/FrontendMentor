@@ -1,0 +1,391 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+img {
+    max-width: 100%;
+}
+
+/* *************navbar******** */
+nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 40px;
+    /* border: solid 1px black; */
+}
+
+h1 {
+    margin-right: 30px;
+    /* padding: 50px 50px; */
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 0 20px 15px 20px;
+    /* border: solid 1px black; */
+}
+
+
+nav button {
+    padding: 10px 15px;
+    margin: 16px;
+    border-radius: 10px;
+    border: none;
+    color: hsla(0, 0%, 41%, 0.808);
+    background-color: hsl(0, 0%, 98%);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+button:hover {
+    cursor: pointer;
+    color: hsl(0, 0%, 8%);
+}
+
+.register {
+    border: solid 1px hsl(0, 0%, 41%);
+}
+
+.navigation2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* **********dropdown menu********* */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    border-radius: 15px;
+    box-shadow: 0px 9px 41px 3px rgba(128, 128, 128, 0.3);
+    padding: 20px 0px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    cursor: pointer;
+}
+
+.arrowUp {
+    display: none;
+}
+
+.dropdown:hover .arrowUp {
+    display: inline;
+}
+
+.dropdown:hover .arrowDown {
+    display: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+}
+
+li {
+    display: flex;
+    color: hsl(0, 0%, 41%);
+
+}
+
+li img {
+    padding: 0 10px;
+}
+
+.about:hover {
+    color: hsl(0, 0%, 8%);
+}
+
+/* **********Menu burger*********** */
+
+/* Sidenav menu */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -250px;
+    background-color: hsl(0, 0%, 98%);
+    padding-top: 60px;
+    transition: left 0.5s ease;
+}
+.open,
+.navMobile img {
+    visibility: hidden;
+}
+.menu1 li a, .menu2 li a{
+    font-size: 18px;
+}
+
+.navMobile {
+    height: 10vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Sidenav menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #111;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Active class */
+.sidenav.active {
+    right: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+
+/* **********section************** */
+section {
+    width: 90%;
+    height: 80vh;
+    margin: 0 auto 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.presentation {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 50px 50px 0 50px;
+}
+
+.presentation h2 {
+    font-size: 4em;
+    color: hsl(0, 0%, 8%);
+}
+
+.presentation p {
+    width: 80%;
+    margin-right: 10px;
+    color: hsl(0, 0%, 41%);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.presentation button {
+    width: 120px;
+    padding: 10px;
+    margin: 30px 0;
+    border-radius: 10px;
+    border: solid 0.8px hsl(0, 0%, 8%);
+    background-color: hsl(0, 0%, 8%);
+    color: hsla(0, 0%, 98%, 0.938);
+    font-weight: 800;
+    font-size: 0.75em;
+}
+
+.presentation button:hover {
+    background-color: hsla(0, 0%, 98%, 0.938);
+    color: hsl(0, 0%, 8%);
+}
+
+.clients {
+    height: 20%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+.image {
+    background-image: url(/images/image-hero-desktop.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+}
+
+.attribution {
+    margin-top: 50px;
+}
+
+/* ********mediaqueries*********** */
+
+@media screen and (max-width: 875px){
+
+    .open,
+    .navMobile img {
+        visibility: visible;
+    }
+    nav{
+        display: none;
+    }
+    .text{
+        justify-content: center;
+    }
+    .presentation{
+        height: 60%;
+    }
+    .presentation h2{
+        font-size: 30px;
+    }
+    .clients{
+        height: 20%;
+        align-items: end;
+        margin: 0;
+    }
+    .clients img{
+        width: 50px;
+    }
+
+    .attribution{
+        margin: 0;
+    }
+}
+@media all and (max-width: 875px) and (min-width:615px){
+    .open,
+    .navMobile img {
+        visibility: visible;
+    }
+    nav{
+        display: none;
+    }
+    .text{
+        justify-content: center;
+    }
+    .presentation{
+        height: 60%;
+    }
+    .presentation h2{
+        font-size: 30px;
+    }
+    .clients{
+        height: 20%;
+        align-items: end;
+        margin: 0;
+    }
+    .clients img{
+        width: 50px;
+    }
+
+    .attribution{
+        margin: 0;
+    }
+}
+
+@media all and (max-width: 615px) and (min-width:375px){
+    section{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        height: 200vh;
+    }
+    .image{
+        background-image: url(/images/image-hero-mobile.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+    .text{
+        width: 100%;
+        height: 100vh;
+    }
+    .text p{
+        width: 100%;
+        
+    }
+    .image{
+        height: 100vh;
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:375px){
+    section{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        height: 200vh;
+    }
+    .image{
+        background-image: url(/images/image-hero-mobile.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+    .text{
+        width: 100%;
+        height: 100vh;
+    }
+    .text p{
+        width: 100%;
+        
+    }
+    .image{
+        height: 100vh;
+        width: 100%;
+    }
+
+}

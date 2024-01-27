@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(275, 100%, 97%);
+    font-family: 'Work Sans', sans-serif;
+}
+
+h2,
+p {
+    font-size: 16px;
+}
+
+h2:hover {
+    color: #ad28eb;
+    cursor: pointer;
+}
+
+p {
+    color: hsl(292, 16%, 49%);
+    display: none;
+}
+
+.arriere-plan {
+    height: 40vh;
+    background-image: url(/assets/images/background-pattern-desktop.svg);
+}
+
+.container {
+    width: 40%;
+    height: 80vh;
+    margin: -200px auto;
+    box-shadow: 0px 9px 50px -23px #000000;
+    border-radius: 5%;
+    background-color: white;
+}
+
+.faq {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.faq img {
+    padding: 40px 35px;
+}
+
+h1 {
+    padding: 40px 0;
+}
+
+section {
+    width: 90%;
+    margin: auto;
+    padding: 15px 0;
+}
+
+.attribution {
+    margin-top: 250px;
+}
+
+.acc-head {
+    color: hsl(292, 42%, 14%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.acc-head img:hover {
+    cursor: pointer;
+}
+
+.acc-content {
+    display: none;
+}
+
+.acc-content-show {
+    display: block;
+}
+
+.moins {
+    display: none;
+}
+
+.icon-show {
+    display: block;
+}
+
+.icon-hide {
+    display: none;
+}
+
+
+/* *********************** */

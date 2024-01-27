@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 86%);
+}
+
+.container {
+    width: 600px;
+    height: 80vh;
+    background-color: hsl(0, 0%, 100%);
+    margin: 100px auto;
+    border-radius: 20px 20px 200px 20px;
+}
+
+label{
+    color: hsla(0, 1%, 44%, 0.747);
+    text-transform: uppercase;
+    font-size: 12px;
+}
+input{
+    width: 100px;
+    padding: 10px;
+    font-weight: 800;
+    font-size: 20px;
+    border: 0.8px solid  hsla(0, 1%, 44%, 0.452);
+    border-radius: 5px;
+}
+.birth{
+    display: flex;
+    padding: 25px;
+}
+.dmy{
+    padding: 0 20px;
+}
+.lineArrow{
+    display: flex;
+}
+.arrow{
+    width: 60px;
+    background-color: hsl(259, 100%, 65%);
+    margin: auto 0;
+    padding: 15px;
+    border-radius: 50%;
+    /* position: absolute;
+    bottom: 30px; */
+}
+button{
+    border: none;
+    background-color: hsl(0, 0%, 100%);
+}
+button:hover{
+    cursor: pointer;
+}
+.error1, .error2, .error3{
+    color: hsl(0, 100%, 67%);
+    font-size: 10px;
+}
+.line{
+    width: 65%;
+    height: 10px;
+    /* margin: 0 0 45px 45px; */
+    margin: auto 0 auto 45px;
+}
+.text span{
+    color: hsl(259, 100%, 65%);
+    font-style: italic;
+    font-weight: 900;
+    font-size: 60px;
+}
+.text p{
+    font-style: italic;
+    font-weight: 900;
+    font-size: 60px;
+}
+.text{
+    margin-left: 45px;
+}
+
+
+.attribution {
+    margin-top: 100px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

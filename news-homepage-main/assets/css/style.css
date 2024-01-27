@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+p{
+    font-size: 14px;
+    color: hsl(236, 13%, 42%);
+}
+
+.container{
+    width: 75%;
+    height: 100vh;
+    margin: auto;
+}
+img{
+    max-width: 100%;
+}
+
+/* ***********navbar**************** */
+nav{
+    /* height: 10vh; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+nav img{
+    padding-left: 10px;
+}
+ul{
+    width: 50%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+a:hover{
+    color: hsl(5, 85%, 63%);
+}
+a{
+    text-decoration: none;
+}
+.section1{
+    /* height: 60vh; */
+    display: flex;
+    justify-content: space-evenly;
+}
+.new{
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.new p{
+    color: hsl(233, 8%, 79%);
+}
+.ss-section1{
+    width: 65%;
+}
+.bright{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ss-bright1, .ss-bright2{
+    width: 50%;
+}
+
+h1{
+    font-size: 2.3rem;
+    font-weight: 800;
+    line-height: 1;
+    padding: 20px 0;
+}
+.ss-bright2{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.bright button{
+    background-color: hsl(5, 85%, 63%);
+    color: hsl(36, 100%, 99%);
+    border: none;
+    width: 50%;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding: 15px;
+    margin-top: 20px;
+}
+.bright button:hover{
+    background-color: hsl(240, 100%, 5%);
+}
+
+.new h2, .new h3, .new p{
+    padding: 15px 20px;
+}
+.new h2{
+    color: hsl(35, 77%, 62%);
+}
+.new h3:hover{
+    color: hsl(35, 77%, 62%);
+}
+hr{
+    width: 250px;
+    margin: auto;
+    size: 0.5px;
+    border-color: rgba(128, 128, 128, 0.466);
+
+}
+
+.section2{
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+
+}
+.s2text{
+    width:70%;
+}
+.s2text h2, .s2text p{
+    color: rgba(128, 128, 128, 0.466);
+    padding: 5px;
+}
+.s2text h3{
+    font-size: 15px;
+    font-weight: 800;
+}
+.s2text p{
+    font-size: 13px;
+    color: rgb(128, 128, 128);
+}
+.s2text h3:hover{
+    color: hsl(5, 85%, 63%);
+}
+.ss-section2{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 10px;
+}
+.ss-section2 img{
+    height: 100px;
+}
+.attribution{
+    margin-top: 100px;
+}

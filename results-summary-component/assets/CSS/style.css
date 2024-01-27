@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.container {
+    width: 50%;
+    height: 400px;
+    margin: 100px auto;
+    box-shadow: 3px 5px 22px -5px rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    display: flex;
+}
+
+.critere {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px;
+    font-weight: 700;
+}
+
+.results,
+.summary {
+    width: 50%;
+}
+
+.results {
+    background-color: hsl(241, 81%, 54%);
+    border-radius: 20px;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    font-size: 16px;
+    text-shadow: 1px 1px 4px rgba(94, 90, 88, 0.76);
+}
+
+.gray {
+    color: hsl(241, 100%, 89%);
+}
+
+.black {
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+}
+.summary h2{
+    color: hsl(224, 30%, 27%);
+}
+
+.score {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    /* background-color: hsla(256, 72%, 46%, 1); */
+    box-shadow: inset 0px 11px 29px -4px #141166;
+}
+
+.total {
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.great {
+    text-align: center;
+    width: 80%;
+}
+
+.critere1 {
+    color: hsl(0, 100%, 67%);
+    background-color: rgba(255, 87, 87, 0.103)
+}
+
+.critere2 {
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.103);
+}
+
+.critere3 {
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.103);
+}
+
+.critere4 {
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.103);
+}
+
+.ligne {
+    display: flex;
+}
+
+.btn {
+    margin: auto;
+    width: 80%;
+}
+
+button {
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.summary h2 {
+    margin: 30px 15px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* mediaqueries */
+@media screen and (max-width:825px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 150vh;
+        margin: 0;
+    }
+
+    .results,
+    .summary {
+        width: 100%;
+        height: 50%;
+    }
+}
